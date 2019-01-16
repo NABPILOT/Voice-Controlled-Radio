@@ -1,0 +1,24 @@
+{
+  "name": "vcrd",
+  "version": "0.2.1",
+  "description": "Daemon for Voice Controlled Radio hardware",
+  "main": "index.js",
+  "directories": {
+    "bin": "bin",
+    "lib": "lib"
+  },
+  "author": "Andy Buckingham <andy.buckingham@togglebit.co.uk>",
+  "license": "ISC",
+  "dependencies": {
+    "async-find": "^1.0.0",
+    "debug": "^3.1.0",
+    "loudness": "^0.2.2",
+    "rpio": "^0.9.22",
+    "xml-stream": "^0.4.5"
+  },
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
