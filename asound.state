@@ -69,8 +69,8 @@ state.seeed2micvoicec {
 	control.1 {
 		iface MIXER
 		name 'Capture Volume'
-		value.0 39
-		value.1 39
+		value.0 23
+		value.1 23
 		comment {
 			access 'read write'
 			type INTEGER
@@ -78,8 +78,8 @@ state.seeed2micvoicec {
 			range '0 - 63'
 			dbmin -1725
 			dbmax 3000
-			dbvalue.0 1200
-			dbvalue.1 1200
+			dbvalue.0 0
+			dbvalue.1 0
 		}
 	}
 	control.2 {
@@ -208,8 +208,8 @@ state.seeed2micvoicec {
 	control.11 {
 		iface MIXER
 		name 'Headphone Playback Volume'
-		value.0 127
-		value.1 127
+		value.0 108
+		value.1 108
 		comment {
 			access 'read write'
 			type INTEGER
@@ -217,15 +217,15 @@ state.seeed2micvoicec {
 			range '0 - 127'
 			dbmin -9999999
 			dbmax 600
-			dbvalue.0 600
-			dbvalue.1 600
+			dbvalue.0 -1300
+			dbvalue.1 -1300
 		}
 	}
 	control.12 {
 		iface MIXER
 		name 'Headphone Playback ZC Switch'
-		value.0 false
-		value.1 false
+		value.0 true
+		value.1 true
 		comment {
 			access 'read write'
 			type BOOLEAN
@@ -479,7 +479,7 @@ state.seeed2micvoicec {
 	control.34 {
 		iface MIXER
 		name 'Noise Gate Threshold'
-		value 15
+		value 0
 		comment {
 			access 'read write'
 			type INTEGER
@@ -490,7 +490,7 @@ state.seeed2micvoicec {
 	control.35 {
 		iface MIXER
 		name 'Noise Gate Switch'
-		value true
+		value false
 		comment {
 			access 'read write'
 			type BOOLEAN
@@ -500,8 +500,8 @@ state.seeed2micvoicec {
 	control.36 {
 		iface MIXER
 		name 'ADC PCM Capture Volume'
-		value.0 219
-		value.1 219
+		value.0 207
+		value.1 207
 		comment {
 			access 'read write'
 			type INTEGER
@@ -509,14 +509,14 @@ state.seeed2micvoicec {
 			range '0 - 255'
 			dbmin -9999999
 			dbmax 3000
-			dbvalue.0 1200
-			dbvalue.1 1200
+			dbvalue.0 600
+			dbvalue.1 600
 		}
 	}
 	control.37 {
 		iface MIXER
 		name 'Left Output Mixer Boost Bypass Volume'
-		value 0
+		value 7
 		comment {
 			access 'read write'
 			type INTEGER
@@ -524,7 +524,7 @@ state.seeed2micvoicec {
 			range '0 - 7'
 			dbmin -2100
 			dbmax 0
-			dbvalue.0 -2100
+			dbvalue.0 0
 		}
 	}
 	control.38 {
@@ -544,7 +544,7 @@ state.seeed2micvoicec {
 	control.39 {
 		iface MIXER
 		name 'Right Output Mixer Boost Bypass Volume'
-		value 0
+		value 7
 		comment {
 			access 'read write'
 			type INTEGER
@@ -552,7 +552,7 @@ state.seeed2micvoicec {
 			range '0 - 7'
 			dbmin -2100
 			dbmax 0
-			dbvalue.0 -2100
+			dbvalue.0 0
 		}
 	}
 	control.40 {
